@@ -216,11 +216,13 @@
       box-shadow: 0 6px 24px rgba(207,7,7,0.1);
       transform: translateY(-3px);
     }
-    .vp-card img {
+    .vp-card img,
+    .vp-card svg {
       width: 68px;
       height: 68px;
       object-fit: contain;
       margin: 0 auto 18px;
+      display: block;
     }
     .vp-card h3 {
       font-family: 'Sora', sans-serif;
@@ -541,36 +543,138 @@
     <div class="title-divider"></div>
 
     <div class="vp-grid">
+
+      <!-- 1. Previsibilidade -->
       <div class="vp-card">
-        <img src="https://pages.greatpages.com.br/fss.fullsalessystem.com-obrigado2-playbook/1772822340/imagens/desktop/1700080_1_176421393714357099.png" alt="Previsibilidade">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none" stroke="#bbb" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <!-- Eye -->
+          <path d="M8 33 C22 18 58 18 72 33 C58 48 22 48 8 33Z"/>
+          <circle cx="40" cy="33" r="9"/>
+          <circle cx="40" cy="33" r="3" fill="#bbb" stroke="none"/>
+          <!-- Bar chart below -->
+          <line x1="12" y1="70" x2="68" y2="70"/>
+          <rect x="16" y="57" width="10" height="13" rx="1.5"/>
+          <rect x="31" y="47" width="10" height="23" rx="1.5"/>
+          <rect x="46" y="38" width="10" height="32" rx="1.5"/>
+        </svg>
         <h3>Previsibilidade</h3>
         <p>Times e processos comerciais bem estruturados garantem números previsíveis</p>
       </div>
+
+      <!-- 2. Alta Lucratividade -->
       <div class="vp-card">
-        <img src="https://pages.greatpages.com.br/fss.fullsalessystem.com-obrigado2-playbook/1772822340/imagens/desktop/1700080_1_176421393714328754.png" alt="Alta Lucratividade">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none" stroke="#bbb" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <!-- Coin stack -->
+          <ellipse cx="33" cy="60" rx="17" ry="5.5"/>
+          <ellipse cx="33" cy="52" rx="17" ry="5.5"/>
+          <line x1="16" y1="52" x2="16" y2="60"/>
+          <line x1="50" y1="52" x2="50" y2="60"/>
+          <ellipse cx="33" cy="44" rx="17" ry="5.5"/>
+          <line x1="16" y1="44" x2="16" y2="52"/>
+          <line x1="50" y1="44" x2="50" y2="52"/>
+          <!-- Trend arrow -->
+          <polyline points="54,68 60,50 66,58 73,32"/>
+          <polyline points="67,26 73,32 67,38"/>
+        </svg>
         <h3>Alta Lucratividade</h3>
         <p>Um negócio que passa a operar com alta margem te trazendo tranquilidade</p>
       </div>
+
+      <!-- 3. Escala sem entraves -->
       <div class="vp-card">
-        <img src="https://pages.greatpages.com.br/fss.fullsalessystem.com-obrigado2-playbook/1772822340/imagens/desktop/1700080_1_176421393714357651.png" alt="Escala sem entraves">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none" stroke="#bbb" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <!-- Rocket body -->
+          <path d="M40 8 C54 15 58 32 58 52 L40 68 L22 52 C22 32 26 15 40 8Z"/>
+          <!-- Porthole -->
+          <circle cx="40" cy="32" r="8"/>
+          <!-- Left fin -->
+          <path d="M22 52 L12 60 L22 60"/>
+          <!-- Right fin -->
+          <path d="M58 52 L68 60 L58 60"/>
+          <!-- Flame -->
+          <path d="M32 68 C30 74 36 78 40 72 C44 78 50 74 48 68"/>
+        </svg>
         <h3>Escala sem entraves</h3>
         <p>Facilidade para duplicar sua operação e faturamento por ter um processo definido e baseado em indicadores</p>
       </div>
+
+      <!-- 4. Equilíbrio Profissional × Pessoal -->
       <div class="vp-card">
-        <img src="https://pages.greatpages.com.br/fss.fullsalessystem.com-obrigado2-playbook/1772822340/imagens/desktop/1700080_1_176421393714399156.png" alt="Equilíbrio Profissional X Pessoal">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none" stroke="#bbb" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <!-- Pole -->
+          <line x1="40" y1="12" x2="40" y2="70"/>
+          <!-- Base -->
+          <path d="M26 70 L54 70"/>
+          <path d="M30 70 L26 76 L54 76 L50 70"/>
+          <!-- Beam -->
+          <line x1="10" y1="26" x2="70" y2="26"/>
+          <!-- Top ornament -->
+          <circle cx="40" cy="12" r="5" fill="#bbb" stroke="none"/>
+          <!-- Left pan strings & pan -->
+          <line x1="13" y1="26" x2="10" y2="44"/>
+          <line x1="27" y1="26" x2="30" y2="44"/>
+          <path d="M8 44 Q20 52 32 44"/>
+          <!-- Right pan strings & pan -->
+          <line x1="53" y1="26" x2="50" y2="44"/>
+          <line x1="67" y1="26" x2="70" y2="44"/>
+          <path d="M48 44 Q60 52 72 44"/>
+        </svg>
         <h3>Equilíbrio<br>Profissional&nbsp;×&nbsp;Pessoal</h3>
         <p>Mais tempo e tranquilidade mental para focar em outras áreas também importantes da sua vida.</p>
       </div>
+
+      <!-- 5. Independência do dono -->
       <div class="vp-card">
-        <img src="https://pages.greatpages.com.br/fss.fullsalessystem.com-obrigado2-playbook/1772822340/imagens/desktop/1700080_1_176421393714350119.png" alt="Independência do dono">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none" stroke="#bbb" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <!-- Building -->
+          <rect x="8" y="30" width="40" height="40" rx="2"/>
+          <!-- Roof -->
+          <polyline points="6,32 28,14 50,32"/>
+          <!-- Door -->
+          <rect x="20" y="52" width="12" height="18" rx="1"/>
+          <!-- Windows -->
+          <rect x="12" y="36" width="8" height="8" rx="1"/>
+          <rect x="34" y="36" width="8" height="8" rx="1"/>
+          <!-- Person circle head -->
+          <circle cx="65" cy="26" r="6"/>
+          <!-- Body -->
+          <line x1="65" y1="32" x2="65" y2="48"/>
+          <!-- Arms -->
+          <line x1="57" y1="38" x2="73" y2="38"/>
+          <!-- Legs -->
+          <line x1="65" y1="48" x2="59" y2="60"/>
+          <line x1="65" y1="48" x2="71" y2="60"/>
+          <!-- Checkmark -->
+          <polyline points="56,50 60,55 72,43" stroke-width="2.5"/>
+        </svg>
         <h3>Independência do dono</h3>
         <p>Um negócio cujas vendas acontecem sem a presença dos fundadores</p>
       </div>
+
+      <!-- 6. Valor de Mercado -->
       <div class="vp-card">
-        <img src="https://pages.greatpages.com.br/fss.fullsalessystem.com-obrigado2-playbook/1772822340/imagens/desktop/1700080_1_176421393714338431.png" alt="Valor de Mercado">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none" stroke="#bbb" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <!-- Diamond -->
+          <path d="M40 12 L60 32 L40 70 L20 32 Z"/>
+          <!-- Top facets -->
+          <polyline points="20,32 30,18 40,12 50,18 60,32"/>
+          <!-- Middle line -->
+          <line x1="20" y1="32" x2="60" y2="32"/>
+          <!-- Inner facets down -->
+          <line x1="30" y1="18" x2="30" y2="32"/>
+          <line x1="50" y1="18" x2="50" y2="32"/>
+          <line x1="30" y1="32" x2="40" y2="50"/>
+          <line x1="50" y1="32" x2="40" y2="50"/>
+          <!-- Sparkle top-right -->
+          <line x1="68" y1="12" x2="68" y2="22"/>
+          <line x1="63" y1="17" x2="73" y2="17"/>
+          <line x1="64" y1="13" x2="72" y2="21"/>
+          <line x1="72" y1="13" x2="64" y2="21"/>
+        </svg>
         <h3>Valor de Mercado</h3>
         <p>Um negócio que passa a ter Equity, pois para de depender do expert para faturar</p>
       </div>
+
     </div>
   </div>
 </section>
