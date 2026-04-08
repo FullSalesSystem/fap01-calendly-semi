@@ -6,11 +6,17 @@
   <title>Parabéns por se cadastrar no Diagnóstico de Estruturação Comercial</title>
   <meta name="description" content="Parabéns por se cadastrar no Diagnóstico de Estruturação Comercial">
   <meta name="robots" content="all">
-  <link rel="icon" type="image/png" href="ÍCONE---Full-Sales.png">
-  <link rel="apple-touch-icon" href="ÍCONE---Full-Sales.png">
+  <link rel="icon" type="image/png" href="icone-fss.png">
+  <link rel="apple-touch-icon" href="icone-fss.png">
   <meta property="og:title" content="Parabéns Diagnóstico Comercial">
   <meta property="og:description" content="Parabéns por se cadastrar no Diagnóstico de Estruturação Comercial">
   <meta property="og:site_name" content="Full Sales System">
+
+  <!-- Preconnect para acelerar carregamento do calendário GHL -->
+  <link rel="preconnect" href="https://api.leadconnectorhq.com">
+  <link rel="preconnect" href="https://link.msgsndr.com">
+  <link rel="dns-prefetch" href="https://api.leadconnectorhq.com">
+  <link rel="dns-prefetch" href="https://link.msgsndr.com">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,6 +60,9 @@
     }
     .section { padding: 56px 0; }
     .section-gray { background: var(--gray-bg); }
+
+    /* Offset scroll para compensar navbar fixa */
+    #agendar { scroll-margin-top: var(--navbar-h, 64px); }
 
     /* ================================================================
        FIXED NAVBAR
@@ -520,7 +529,7 @@
 <section class="section section-gray">
   <div class="container">
     <div class="video-wrapper">
-      <vturb-smartplayer id="vid-6944839a76990ab694f47153" style="display:block;margin:0 auto;width:100%;"></vturb-smartplayer>
+      <vturb-smartplayer id="vid-6944839a76990ab694f47153" autoplay="false" data-autoplay="false" style="display:block;margin:0 auto;width:100%;"></vturb-smartplayer>
     </div>
 
     <div class="cta-center" style="margin-top: 36px;">
@@ -712,7 +721,7 @@
 </script>
 
 <!-- GHL Booking Widget -->
-<script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+<script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript" defer></script>
 
 <!-- Exit-Intent Popup -->
 <script>
