@@ -50,6 +50,7 @@
       --gray-bg:    #f5f5f5;
       --border:     #e0e0e0;
       --navbar-h:   64px;
+      --fss-blue:   #0c1830;
     }
 
     /* ===== LAYOUT ===== */
@@ -60,6 +61,30 @@
     }
     .section { padding: 56px 0; }
     .section-gray { background: var(--gray-bg); }
+    .section-bg {
+      background-color: var(--fss-blue);
+      background-image: url('background fss.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .section-bg .section-title,
+    .section-bg .booking-intro .headline {
+      color: #ffffff;
+    }
+    .section-bg .booking-intro .headline strong {
+      color: var(--gold);
+    }
+    .section-bg .booking-intro .subline {
+      color: #cfd6e4;
+    }
+    .section-bg .title-divider {
+      background: var(--gold);
+    }
+    @media (max-width: 768px) {
+      .section-bg { background-attachment: scroll; }
+    }
 
     /* Offset scroll para compensar navbar fixa */
     #agendar { scroll-margin-top: var(--navbar-h, 64px); }
@@ -71,8 +96,8 @@
       position: fixed;
       top: 0; left: 0; right: 0;
       height: var(--navbar-h);
-      background: #ffffff;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+      background: var(--fss-blue);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.25);
       z-index: 1000;
       display: flex;
       align-items: center;
@@ -434,7 +459,7 @@
      FIXED NAVBAR
 ================================================================ -->
 <nav class="navbar">
-  <img src="LOGO-(Azul)---Full-Sales.png" alt="Full Sales System" class="navbar-logo">
+  <img src="LOGO-(Branco)---Full-Sales.png" alt="Full Sales System" class="navbar-logo">
   <a href="#agendar" class="btn-cta">Quero Agendar Agora</a>
 </nav>
 
@@ -444,7 +469,7 @@
 <!-- ================================================================
      BOOKING SECTION
 ================================================================ -->
-<section class="section" id="agendar">
+<section class="section section-bg" id="agendar">
   <div class="container">
     <div class="booking-intro">
       <p class="headline">
@@ -465,7 +490,7 @@
 <section class="section section-gray">
   <div class="container">
     <div class="video-wrapper">
-      <vturb-smartplayer id="vid-6944839a76990ab694f47153" autoplay="false" data-autoplay="false" style="display:block;margin:0 auto;width:100%;"></vturb-smartplayer>
+      <vturb-smartplayer id="vid-6843286d92e4f2ececa984de" style="display:block;margin:0 auto;width:100%;"></vturb-smartplayer>
     </div>
 
     <div class="cta-center" style="margin-top: 36px;">
@@ -482,7 +507,7 @@
 <!-- ================================================================
      VALUE PROPOSITIONS
 ================================================================ -->
-<section class="section section-gray">
+<section class="section section-bg">
   <div class="container">
     <h2 class="section-title">O que esse diagnóstico <span>fornece?</span></h2>
     <div class="title-divider"></div>
@@ -538,7 +563,7 @@
 <!-- ================================================================
      TESTIMONIALS — HORIZONTAL CAROUSEL
 ================================================================ -->
-<section class="section">
+<section class="section section-bg">
   <div class="container">
     <h2 class="section-title">Veja o que <span>empresários</span> de diferentes segmentos dizem sobre nós.</h2>
     <div class="title-divider"></div>
@@ -635,7 +660,7 @@
 <!-- Vturb Video Player -->
 <script type="text/javascript">
   var s = document.createElement("script");
-  s.src = "https://scripts.converteai.net/c678e70b-13db-47d3-b046-f3e247d16ff7/players/6944839a76990ab694f47153/v4/player.js";
+  s.src = "https://scripts.converteai.net/c678e70b-13db-47d3-b046-f3e247d16ff7/players/6843286d92e4f2ececa984de/v4/player.js";
   s.async = true;
   document.head.appendChild(s);
 </script>
