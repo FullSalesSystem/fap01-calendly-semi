@@ -92,5 +92,23 @@
   <p>© 2026 fullsalessystem.com | Todos os direitos reservados</p>
 </footer>
 
+  <script>
+  /* Conversao Meta no agendamento (widget GHL/LeadConnector). Sem redirect: a pagina ja e o passo final. */
+  (function(){
+    var fired=false;
+    window.addEventListener('message',function(e){
+      if(!e.data||fired)return;
+      var o=e.origin;
+      if(o!=='https://api.leadconnectorhq.com'&&o!=='https://link.msgsndr.com')return;
+      var d=e.data;
+      var booked=(d.type==='appointmentBooked'||d.event==='appointmentBooked'||d.type==='bookingConfirmation'||d.event==='bookingConfirmation'||d.action==='appointmentBooked'||(typeof d==='string'&&d.indexOf('appointmentBooked')!==-1));
+      if(!booked)return;
+      fired=true;
+      window.dataLayer=window.dataLayer||[];
+      window.dataLayer.push({event:'agendamento_confirmado',funil:'fap01',variante:'semi'});
+      if(typeof fbq==='function')fbq('track','Schedule');
+    });
+  })();
+  </script>
 </body>
 </html>
