@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20261005">
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -39,20 +39,15 @@
   <img src="assets/logo-branco.png" alt="Full Sales System" class="navbar-logo" loading="lazy">
 </nav>
 
-<div class="step-bar">PASSO 2 DE 3: Parabéns! Você está quase lá!</div>
+<div class="step-bar">Passo 2 de 3 · Escolha seu horário</div>
 
 <section class="hero-section" id="agendar">
   <div class="container">
-    <p class="hero-subtitle">Você foi selecionado para o nosso <strong>diagnóstico comercial</strong>. Preencha um dos horários abaixo para dar o próximo passo.</p>
+    <p class="hero-subtitle">Escolha o horário da sua <strong>reunião de diagnóstico</strong> com o nosso time.</p>
 
     <div class="booking-widget">
-      <iframe src="https://api.leadconnectorhq.com/widget/booking/dCByvbWiB4DmQBf3MScY" style="width:100%;border:none;overflow:hidden;min-height:700px;" scrolling="no" id="dCByvbWiB4DmQBf3MScY_1774642295836"></iframe>
+      <iframe src="https://api.leadconnectorhq.com/widget/booking/dCByvbWiB4DmQBf3MScY" style="width:100%;border:none;overflow:hidden;min-height:480px;" scrolling="no" id="dCByvbWiB4DmQBf3MScY_1774642295836"></iframe>
       <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
-    </div>
-
-    <div class="warning-box">
-      <span class="warning-icon" aria-hidden="true">⚠️</span>
-      <p><span class="warning-primary"><strong>Atenção:</strong> Nossa equipe entrará em contato via ligação e/ou WhatsApp. É importante que você nos responda para confirmar seu agendamento.</span> <span class="warning-secondary">Se não recebermos sua confirmação, sua vaga é automaticamente liberada para a próxima pessoa da fila.</span></p>
     </div>
 
     <div class="after-booking">
@@ -93,7 +88,8 @@
 </footer>
 
   <script>
-  /* Conversao Meta no agendamento (widget GHL/LeadConnector). Sem redirect: a pagina ja e o passo final. */
+  /* Conversao Meta no agendamento (widget GHL/LeadConnector) + redirect pra confirmacao
+     (PASSO 3 de 3 com o video dos proximos passos que esta pagina promete). */
   (function(){
     var fired=false;
     window.addEventListener('message',function(e){
@@ -107,6 +103,7 @@
       window.dataLayer=window.dataLayer||[];
       window.dataLayer.push({event:'agendamento_confirmado',funil:'fap01',variante:'semi'});
       if(typeof fbq==='function')fbq('track','Schedule');
+      setTimeout(function(){window.location.href='https://fap01-obrigado-final.fullsalessystem.com/'+location.search;},300);
     });
   })();
   </script>
